@@ -11,7 +11,6 @@ body {
     background-position: center;
     font-family: "Atkinson Hyperlegible Mono", monospace;
     color: #e0e0e0;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,22 +22,72 @@ h1 {
     font-size: 2.5rem;
     font-weight: bold;
     color: #00eaff;
-    border-bottom: 2px solid rgba(0, 234, 255, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 4px solid rgba(0, 234, 255, 0.6);
     padding-bottom: 10px;
     margin-bottom: 20px;
+    text-align: center;
+    width: 60%;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.game-link {
+    background: #111;
+    color: #e0e0e0;
+    padding: 20px;
+    border-radius: 0;
+    border: 3px solid #00eaff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    position: relative;
+}
+
+.game-link::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 6px solid rgba(0, 234, 255, 0.3);
+    clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+    transition: opacity 0.3s;
+    opacity: 0.5;
+}
+
+.game-link:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 234, 255, 0.4);
+    background: #00eaff;
+    color: #111;
+}
+
+.game-link:hover::before {
+    opacity: 1;
 }
 
 .game-link-other {
     background: #1a1a1a;
     color: #00eaff;
-    padding: 12px 24px;
-    border-radius: 8px;
-    border: 1px solid #00eaff;
+    padding: 15px 30px;
+    border: 3px solid #00eaff;
+    border-radius: 0;
     transition: 0.3s;
-    display: inline-block;
-    margin: 10px;
     font-size: 1rem;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .game-link-other:hover {
@@ -49,42 +98,17 @@ h1 {
 .search-container input {
     width: 320px;
     padding: 12px;
-    border: 1px solid #00eaff;
+    border: 3px solid #00eaff;
     background: #121212;
     color: #e0e0e0;
-    border-radius: 8px;
     font-size: 1rem;
     text-align: center;
     transition: 0.3s;
+    text-transform: uppercase;
 }
 
 .search-container input:focus {
     outline: none;
     border-color: #00ffaa;
-    box-shadow: 0 0 10px rgba(0, 255, 170, 0.5);
-}
-
-.game-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    width: 90%;
-    max-width: 1000px;
-}
-
-.game-link {
-    background: #181818;
-    color: #e0e0e0;
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid #00eaff;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-size: 1.1rem;
-    font-weight: 600;
-}
-
-.game-link:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 234, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 255, 170, 0.6);
 }
