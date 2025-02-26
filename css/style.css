@@ -1,14 +1,35 @@
-
 body {
     background: radial-gradient(circle at center, #111 10%, #000 90%);
-    background-image: url('https://source.unsplash.com/1600x900/?stars,galaxy');
+    background-image: url('background.jpg');
     background-size: cover;
-    color: #0ff; /* Neon cyan text */
+    background-position: center;
+    color: #0ff;
     font-family: "Atkinson Hyperlegible Mono", monospace;
     text-shadow: 0 0 5px cyan, 0 0 10px blue;
     text-align: center;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
 }
 
+h1, .search-container, .game-grid, a {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid cyan;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    animation: floatPanel 3s infinite ease-in-out alternate;
+    display: inline-block;
+    width: auto;
+}
+
+@keyframes floatPanel {
+    0% { transform: translateY(-5px); }
+    100% { transform: translateY(5px); }
+}
 
 h1 {
     font-size: 2.5rem;
@@ -17,7 +38,6 @@ h1 {
     border-bottom: 2px solid rgba(0, 255, 255, 0.5);
     animation: glow 2s infinite alternate;
 }
-
 
 a {
     text-decoration: none;
@@ -39,7 +59,6 @@ a {
     transform: scale(1.1);
 }
 
-
 .search-container input {
     padding: 10px;
     width: 300px;
@@ -49,7 +68,6 @@ a {
     border-radius: 5px;
     text-align: center;
 }
-
 
 .game-grid {
     display: flex;
@@ -65,17 +83,23 @@ a {
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0 0 10px cyan;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s;
     width: 200px;
     text-align: center;
+    display: inline-block;
+    animation: hoverFloat 3s infinite ease-in-out alternate;
 }
 
 .game-link:hover {
-    transform: scale(1.1);
+    transform: translateY(-10px);
     box-shadow: 0 0 20px cyan;
 }
 
-/* Animations */
+@keyframes hoverFloat {
+    0% { transform: translateY(3px); }
+    100% { transform: translateY(-3px); }
+}
+
 @keyframes glow {
     0% { text-shadow: 0 0 5px cyan, 0 0 10px blue; }
     100% { text-shadow: 0 0 10px cyan, 0 0 20px blue; }
