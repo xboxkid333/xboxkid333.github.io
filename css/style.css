@@ -1,6 +1,6 @@
 body {
     background: radial-gradient(circle at center, #111 10%, #000 90%);
-    background-image: url('background.jpg');
+    background-image: url('/imgs/SpaceBG.jpg');
     background-size: cover;
     background-position: center;
     color: #0ff;
