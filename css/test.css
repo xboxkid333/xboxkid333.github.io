@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0a;
+    background-image: url('https://media.wbur.org/wp/2022/07/main_image_star-forming_region_carina_nircam_final-5mb.jpeg');
+    background-size: cover;
+    background-position: center;
+    font-family: "Atkinson Hyperlegible Mono", monospace;
+    color: #e0e0e0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00eaff;
+    border-bottom: 2px solid rgba(0, 234, 255, 0.3);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.game-link-other {
+    background: #1a1a1a;
+    color: #00eaff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 1px solid #00eaff;
+    transition: 0.3s;
+    display: inline-block;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.game-link-other:hover {
+    background: #00eaff;
+    color: #1a1a1a;
+}
+
+.search-container input {
+    width: 320px;
+    padding: 12px;
+    border: 1px solid #00eaff;
+    background: #121212;
+    color: #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #00ffaa;
+    box-shadow: 0 0 10px rgba(0, 255, 170, 0.5);
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.game-link {
+    background: #181818;
+    color: #e0e0e0;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #00eaff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.game-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 234, 255, 0.3);
+}
