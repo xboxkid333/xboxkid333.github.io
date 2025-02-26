@@ -12,11 +12,24 @@
     <title>Nintendoboi2</title>
 </head>
 <body>
-    <div id="ab-loader" class="title-stuff ab-loader"><button>open in &#97;&#98;&#111;&#117;&#116;&#98;&#108;&#97;&#110;&#107;</button></div>
+    <div id="abloader" class="title-stuff ab-loader">
+        <button id="abloader" onclick="abloader()">open in &#97;&#98;&#111;&#117;&#116;&#98;&#108;&#97;&#110;&#107;</button>
+    </div>
     <h1 class="title-stuff">WELCOME TO NINTENDOBOI2 fr fr</h1>
     <div class="search-container title-stuff">
-        <input type="text" id="searchBar" onkeyup="searchgames()" placeholder="Game search">
+        <input type="text" id="searchBar" onkeyup="searchgames()" placeholder="Game searching thing">
+        <div id="gaemsort" class="gaemsort title-stuff">
+            <button class="sortgames" onclick="sortgames('all')">All</button>
+            <button class="sortgames" onclick="sortgames('shooter')">Shooter</button>
+            <button class="sortgames" onclick="sortgames('driving')">Driving</button>
+            <button class="sortgames" onclick="sortgames('pvp')">PvP</button>
+            <button class="sortgames" onclick="sortgames('pve')">PvE</button>
+            <button class="sortgames" onclick="sortgames('simulator')">Simulator</button>
+            <button class="sortgames" onclick="sortgames('skill')">Skill</button>
+        </div>
     </div>
+
+    <div class="gmebox"></div>
     <!--gammessss!!!-->
     <div class="game-grid">
        <a class="game-type shooter" href="https://nintendoboi2.github.io/games/awesome-tanks-2" target="_blank">
@@ -859,4 +872,5 @@
 <script src="js/search.js"></script>
 <script src="js/fav.js"></script>
 <script src="js/aboutb.js"></script>
+<script src="js/sort.js"></script>
 </html>
