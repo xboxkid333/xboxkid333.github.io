@@ -5,17 +5,17 @@
     font-family: "Atkinson Hyperlegible Mono", monospace;
 }
 
-.gmebox {
+/* .gmebox {
     width: 2000px;
     height: 1500px;
     position: absolute;
-    top: 0;
+    top: 0;                       <-------   Dissabled for now but when fully developed will re-enable
     left: 0;
-    background-color: #000000; /* Adjust the background color as needed */
-    border: 2px solid #5900ff; /* Optional: Add a border */
+    background-color: #000000;
+    border: 2px solid #5900ff; 
     box-sizing: border-box;
 }
-
+*/ 
 
 body {
     background-color: #000000;
