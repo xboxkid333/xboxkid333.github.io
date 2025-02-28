@@ -138,3 +138,10 @@ h1 {
     background: #000000;
     text-align: left;
 }
+
+.splash-text {
+    color: #5900ff; 
+    text-align: center; 
+    font-size: 24px; 
+    margin: 20px 0;
+}
