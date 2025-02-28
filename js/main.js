@@ -53,14 +53,3 @@
         }
     }
   });
-
-document.addEventListener('keydown', function(event) {
-    if (event.key.toLowerCase() === 'q') {
-        window.open('https://scholar.google.com', '_blank');
-        this.title("Home - Google Drive");
-        const link = document.createElement('link');
-        link.rel = 'icon';
-        link.href = 'https://static-00.iconduck.com/assets.00/google-drive-icon-2048x2048-j5sa1hcp.png';
-        document.head.appendChild(link);
-    }
-});
