@@ -143,4 +143,9 @@ h1 {
     color: #5900ff;
     text-align: center;
 }
+
+html, body {
+    overflow-x: hidden;
+}
+
 /* could not me using ai  lmao -dnd */
