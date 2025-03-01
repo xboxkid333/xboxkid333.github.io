@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Array 
   var splashTexts = [
     "Hit q for panic button",
     "never leave the site",
@@ -9,15 +8,20 @@ document.addEventListener("DOMContentLoaded", () => {
     "Who is behind you rn?"
   ];
 
-  // random text
+  var lastIndex = -1;
+
   function displaySplashText() {
     const splashElement = document.querySelector(".splash-text");
     if (splashElement) {
-      const randomIndex = Math.floor(Math.random() * splashTexts.length);
+      let randomIndex;
+      do {
+        randomIndex = Math.floor(Math.random() * splashTexts.length);
+      } while (randomIndex === lastIndex);
+
+      lastIndex = randomIndex;
       splashElement.textContent = splashTexts[randomIndex];
     }
   }
 
-  // Call the function i hope
   displaySplashText();
 });
