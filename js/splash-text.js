@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "never leave the site",
     "Thanks for using this btw",
     "do our google form",
-    "Never play games in shcool, it is very bad"
+    "Never play games in shcool, it is very bad",
+    "Who is behind you rn?"
   ];
 
   // random text
