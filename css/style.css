@@ -138,4 +138,9 @@ h1 {
     border-radius: 8px;
 }
 
+.splash-text {
+    color: #5900ff;
+    text-align: center;
+    margin-top: 20px;
+}
 /* could not me using ai lmao -dnd */
