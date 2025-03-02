@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "join our discord server pls"
     "if u want u can donate money to me pls",
     "im broke 😭"
-    "with great power comes great food consumption",
-    "L + dont care + CURSE OF THE NILE ‼️ ‼️ 𓀔𓀇𓀅𓀋𓀡𓀡𓀕𓀠𓀧𓀨𓀣𓀷𓀷𓀿𓀿𓁀𓁶𓁰. 𓁴𓁿𓂀𓁾𓁵𓁯𓂞𓂤𓂗𓃃𓂾𓂺𓂹. 𓃞𓃙𓃖𓃓𓃕𓃓𓃜𓃘𓃙𓃟𓃛𓃞"
+    "with great power comes great food consumption"
+    
   ];
 
   var lastIndex = -1;
