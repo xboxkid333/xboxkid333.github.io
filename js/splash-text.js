@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "if a fly looses its wings, is it now called a walk?",
     "i made this in school",
     "the date is 2125 feb the 4th",
-    "join our discord server pls"
+    "join our discord server pls",
     "if u want u can donate money to me pls",
     "im broke",
     "with great power comes great food consumption"
