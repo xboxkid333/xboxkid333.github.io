@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     "if a fly looses its wings, is it now called a walk?",
     "i made this in school",
     "the date is 2125 feb the 4th",
-    "ever wonder why black history month was given febuary?? (google how many days in feb)",
     "join our discord server pls"
     "if u want u can donate money to me pls",
     "im broke",
