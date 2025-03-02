@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "ever wonder why black history month was given febuary?? (google how many days in feb)",
     "join our discord server pls"
     "if u want u can donate money to me pls",
-    "im broke 😭"
+    "im broke"
     "with great power comes great food consumption"
     
   ];
