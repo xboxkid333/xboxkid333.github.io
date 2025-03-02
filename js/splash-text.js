@@ -3,9 +3,19 @@ document.addEventListener("DOMContentLoaded", () => {
     "Hit q for panic button",
     "never leave the site",
     "Thanks for using this btw",
-    "do our google form",
+    "do our google form pls",
     "Never play games in shcool, it is very bad",
-    "Who is behind you rn?"
+    "Who is behind you rn?",
+    "hawk tuah, spit on that thang",
+    "pls dont sue",
+    "your IP is 192.168.28.0",
+    "VłⱤɄ₴.ɆӾɆ ł₦₮₴₳ⱠⱠɆĐ",
+    "This is not a game website",
+    "Whats that down there",
+    "if you recomend a game that costs money, your IP will be grabed (joke fr)",
+    "im not adding brainrot games",
+    "go read a book or do your homework idk"
+    
   ];
 
   var lastIndex = -1;
