@@ -14,8 +14,22 @@ document.addEventListener("DOMContentLoaded", () => {
     "Whats that down there",
     "if you recomend a game that costs money, your IP will be grabed (joke fr)",
     "im not adding brainrot games",
-    "go read a book or do your homework idk"
-    
+    "go read a book or do your homework idk",
+    "never game in class, it's a trap fr",
+    "ur IP is now part of the dark web fam (its a joke pls dont find me)",
+    "if u suggest a brainrot, we’re sending the teachers and admins (jk kinda)",
+    "i know your mom personaly (JOKE JOKE JOKE JOKE)",
+    "pls dont fight me",
+    "food in the michael wave",
+    "if a fly looses its wings, is it now called a walk?",
+    "i made this in school",
+    "the date is 2125 feb the 4th",
+    "ever wonder why black history month was given febuary?? (google how many days in feb)",
+    "join our discord server pls"
+    "if u want u can donate money to me pls",
+    "im broke 😭"
+    "with great power comes great food consumption",
+    "L + dont care + CURSE OF THE NILE ‼️ ‼️ 𓀔𓀇𓀅𓀋𓀡𓀡𓀕𓀠𓀧𓀨𓀣𓀷𓀷𓀿𓀿𓁀𓁶𓁰. 𓁴𓁿𓂀𓁾𓁵𓁯𓂞𓂤𓂗𓃃𓂾𓂺𓂹. 𓃞𓃙𓃖𓃓𓃕𓃓𓃜𓃘𓃙𓃟𓃛𓃞"
   ];
 
   var lastIndex = -1;
