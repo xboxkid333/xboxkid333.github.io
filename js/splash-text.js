@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     "im not adding brainrot games",
     "go read a book or do your homework idk",
     "never game in class, it's a trap fr",
-    "ur IP is now part of the dark web fam (its a joke pls dont find me)",
     "if u suggest a brainrot, we’re sending the teachers and admins (jk kinda)",
     "i know your mom personaly (JOKE JOKE JOKE JOKE)",
     "pls dont fight me",
@@ -27,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "join our discord server pls",
     "if u want u can donate money to me pls",
     "im broke",
-    "with great power comes great food consumption"
+    "with great power comes great food consumption",
     
   ];
 
