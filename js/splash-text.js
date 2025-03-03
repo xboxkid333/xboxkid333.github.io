@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "pls dont sue",
     "your IP is 192.168.28.0",
     "VłⱤɄ₴.ɆӾɆ ł₦₮₴₳ⱠⱠɆĐ",
-    "This is not a game website",
+    "This is NOT a game website",
     "Whats that down there",
     "if you recomend a game that costs money, your IP will be grabed (joke fr)",
     "im not adding brainrot games",
@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "if u want u can donate money to me pls",
     "im broke",
     "with great power comes great food consumption",
+    "dnd is nerd",
+    "im lazy so not all of the games are sorted :)",
     
   ];
 

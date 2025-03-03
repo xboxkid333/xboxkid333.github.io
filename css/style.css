@@ -144,6 +144,11 @@ h1 {
     text-align: center;
 }
 
+.gaemsort .title-stuff {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 html, body {
     overflow-x: hidden;
 }

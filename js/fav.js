@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const pinButton = document.createElement('span');
         pinButton.className = 'pin-button';
-        pinButton.textContent = pinnedGames.includes(gameTitle) ? '🟩' : '🟥';
+        pinButton.textContent = pinnedGames.includes(gameTitle) ? '🍏' : '🍎';
 
         if (pinnedGames.includes(gameTitle)) {
             pinButton.classList.add('pinned');
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.stopPropagation();
 
             pinButton.classList.toggle('pinned');
-            pinButton.textContent = pinButton.classList.contains('pinned') ? '🟩' : '🟥';
+            pinButton.textContent = pinButton.classList.contains('pinned') ? '🍏' : '🍎';
 
             let updatedPins;
             if (pinButton.classList.contains('pinned')) {
@@ -41,6 +41,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         link.insertBefore(pinButton, link.firstChild);
     });
+
+    const style = document.createElement('style');
+    style.textContent = `
+        .pin-button {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            line-height: 1em;
+            text-align: center;
+            cursor: pointer;
+        }
+    `;
+    document.head.appendChild(style);
 
     function reorderGames() {
         const gameGrid = document.querySelector('.game-grid');

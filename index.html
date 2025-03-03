@@ -14,6 +14,15 @@
 <body>
     <div id="abloader" class="title-stuff ab-loader">
         <button id="abloader" onclick="abloader()">open in &#97;&#98;&#111;&#117;&#116;&#98;&#108;&#97;&#110;&#107;</button>
+        <script>
+            var popupTest = window.open('', '', 'width=1,height=1');
+            if (!popupTest || popupTest.closed || typeof popupTest.closed == 'undefined') {
+                alert("please make sure that popups are enabled frfr");
+            } else {
+                popupTest.close();
+            }
+            
+        </script>
     </div>
     <h1 class="title-stuff">WELCOME TO NINTENDOBOI2</h1>
     <div class="splash-text"></div>
@@ -27,15 +36,19 @@
             <button class="sortgames" onclick="sortgames('pve')">PvE</button>
             <button class="sortgames" onclick="sortgames('simulator')">Simulator</button>
             <button class="sortgames" onclick="sortgames('skill')">Skill</button>
+            <button class="sortgames" onclick="sortgames('flash')">Flash</button>
         </div>
     </div>
 
     <div class="gmebox"></div>
+
     <!--gammessss!!!-->
+
     <div class="game-grid">
+        
        <a class="game-type shooter" href="https://nintendoboi2.github.io/games/awesome-tanks-2">
         <div class="game-link">
-            <span class="pin-button"> </span>
+        <span class="pin-button"></span>
             <span class="game-title">Awesome Tanks 2</span>
         </div>
     </a>
@@ -858,15 +871,16 @@
     </a>
 </div>
 <div class="game-link-other-container">
-<a href="https://nintendoboi22.github.io" >
-    <div class="game-link-other">To Nintendoboi22</div>
-</a>
-<a href="https://nintendoboi222.github.io" >
-    <div class="game-link-other">To Nintendoboi222</div>
-</a>
-<a href="https://nintendoboi2222.github.io" >
-    <div class="game-link-other">To Nintendoboi2222</div>
-</a>
+    <a href="https://nintendoboi22.github.io">
+        <div class="game-link-other">To Nintendoboi22</div>
+    </a>
+    <a href="https://nintendoboi222.github.io">
+        <div class="game-link-other">To Nintendoboi222</div>
+    </a>
+    <a href="https://nintendoboi2222.github.io">
+        <div class="game-link-other">To Nintendoboi2222</div>
+    </a>
+</div>
 </div>
 </body>
 <script src="js/main.js"></script>

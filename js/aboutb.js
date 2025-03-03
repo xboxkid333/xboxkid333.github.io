@@ -1,4 +1,5 @@
-window.open("https://gmail.com");
+window.open("https://mail.google.com");
+
 function validURL(str) {
     var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
       '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
@@ -70,3 +71,4 @@ function validURL(str) {
             abcInstance.open();
             window.close();
         }
+
