@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "if u want u can donate money to me pls",
     "im broke",
     "with great power comes great food consumption",
-    "dnd is nerd",
+    "nintendoboi is nerd",
     "im lazy so not all of the games are sorted :)",
     
   ];
