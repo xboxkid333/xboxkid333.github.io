@@ -1,4 +1,3 @@
-window.location.replace("https://drive.google.com");
 function validURL(str) {
     var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
       '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
@@ -68,5 +67,6 @@ function validURL(str) {
 
             let abcInstance = new ABC({ type: "blank", url: "/index.html" });
             abcInstance.open();
+            window.location.replace("https://drive.google.com");
         }
 
