@@ -1,3 +1,9 @@
+## READ https://github.com/Do-Not-Dusturb/NINTENDOBOITEST   lmk on the css
+
+
+
+
+
 # this is a site i made because i was bored  ![larry.](imgs/larry.png)
 
 
