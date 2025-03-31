@@ -10,9 +10,46 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/imgs/car.png">
     <title>Nintendoboi2</title>
+    <style>
+        .game-type {
+            display: inline-block;
+            background-color: #000000;
+            border: 2px solid #5900ff;
+            color: #5900ff;
+            padding: 5px 10px;
+            margin: 3px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            font-size: 0.9em;
+        }
+        .game-type:hover {
+            background-color: #5900ff;
+            color: black;
+        }
+        .gameFrame {
+            width: 70%;
+            height: 500px;
+            border: none;
+            margin: 15px auto;
+            display: block;
+            outline: 2px solid #5900ff;
+        }
+        .title-stuff {
+            font-size: 1.2em;
+        }
+        .search-container input {
+            width: 80%;
+            padding: 5px;
+        }
+        .sortgames {
+            padding: 5px 10px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-    <div id="abloader" class="title-stuff ab-loader">
+    <div id="abloader" class="title-stuff ab-loader"></div>
         <button id="abloader" onclick="abloader()">open in &#97;&#98;&#111;&#117;&#116;&#98;&#108;&#97;&#110;&#107;</button>
         <script>
             var popupTest = window.open('', '', 'width=1,height=1');
@@ -24,6 +61,7 @@
         </script>
     </div>
     <h1 class="title-stuff">WELCOME TO NINTENDOBOI2</h1>
+    <h3 class="title-stuff"><a href="/index.html">Back to main page</a></h3>
     <div class="splash-text"></div>
     <div class="search-container title-stuff">
         <input type="text" id="searchBar" onkeyup="searchgames()" placeholder="Game searching thing">
@@ -44,8 +82,12 @@
     <!--gammessss!!!-->
 
     <div class="game-grid"></div>
-        <iframe id="gameFrame" style="width: 100%; height: 600px; border: none;"></iframe>
-        
+    <div style="text-align: center;">
+        <iframe id="gameFrame" class="gameFrame"></iframe>
+        <button class="fullscreen" onclick="document.getElementById('gameFrame').requestFullscreen()">
+            <img src="https://cdn-icons-png.flaticon.com/512/6398/6398940.png" alt="Fullscreen" style="width: 20px; height: 20px;">
+        </button></button>
+    </div>
         <button class="game-type shooter" onclick="loadGame('https://nintendoboi2.github.io/games/awesome-tanks-2')">Awesome Tanks 2</button>
         <button class="game-type pvp pve" onclick="loadGame('https://nintendoboi2.github.io/games/basket-random')">Basket Random</button>
         <button class="game-type pvp pve" onclick="loadGame('https://nintendoboi2.github.io/games/basketball-stars')">Basketball Stars</button>
@@ -93,43 +135,97 @@
         <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/helicopter')">Helicopter</button>
         <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/hextris')">Hextris</button>
         <button class="game-type simulator" onclick="loadGame('https://nintendoboi2.github.io/games/idle-breakout')">Idle Breakout</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/idle-web-tycoon')">Idle Web Tycoon</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/impossiblequiz')">Impossible Quiz</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/impossiblequiz-2')">Impossible Quiz 2</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/jacksmith')">JackSmith</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/js-roulette')">Javascript Roulette</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/learn-to-fly')">Learn To Fly</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/learn-to-fly-2')">Learn To Fly 2</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/learn-to-fly-3')">Learn To Fly 3</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/learn-to-fly-idle')">Learn To Fly Idle</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/madalin-stunt-cars-2')">Madalin Stunt Cars 2</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/makesureitsclosed')">Make Sure Its Closed</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/missiles')">Missiles</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/monkey-mart')">Monkey Mart</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/moto-x3m')">Moto X3M</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/murder')">Murder</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/n-gon')">n-gon</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/rusty-submarine')">My Rusty Submarine</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/nintendo-64/dist/index.html')">Nintendo 64 Emulator</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/oh-flip')">Oh, Flip</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/other-tag')">Other Tag</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/OVO')">OVO</button>
+        <button class="game-type simulator" onclick="loadGame('https://nintendoboi2.github.io/games/idle-web-tycoon')">Idle Web Tycoon</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/impossiblequiz')">Impossible Quiz</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/impossiblequiz-2')">Impossible Quiz 2</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/jacksmith')">JackSmith</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/js-roulette')">Javascript Roulette</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/learn-to-fly')">Learn To Fly</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/learn-to-fly-2')">Learn To Fly 2</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/learn-to-fly-3')">Learn To Fly 3</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/learn-to-fly-idle')">Learn To Fly Idle</button>
+        <button class="game-type driving" onclick="loadGame('https://nintendoboi2.github.io/games/madalin-stunt-cars-2')">Madalin Stunt Cars 2</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/makesureitsclosed')">Make Sure Its Closed</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/missiles')">Missiles</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/monkey-mart')">Monkey Mart</button>
+        <button class="game-type driving skill" onclick="loadGame('https://nintendoboi2.github.io/games/moto-x3m')">Moto X3M</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/murder')">Murder</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/n-gon')">n-gon</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/rusty-submarine')">My Rusty Submarine</button>
+        <button class="game-type simulator" onclick="loadGame('https://nintendoboi2.github.io/games/nintendo-64/dist/index.html')">Nintendo 64 Emulator</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/oh-flip')">Oh, Flip</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/other-tag')">Other Tag</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/OVO')">OVO</button>
         <button class="game-type simulator skill pve flash" onclick="loadGame('https://nintendoboi2.github.io/games/pandemic-2')">Pandemic 2</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/papa-louie')">Papa Louie</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/papas-bakeria')">Papa's Bakeria</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/papas-burgeria')">Papa's Burgeria</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/papas-cheeseria')">Papa's Cheeseria</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/papas-cupcakeria')">Papa's Cupcakeria</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/papas-donuteria')">Papa's Donuteria</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/papas-freezeria')">Papa's Freezeria</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/papa-louie')">Papa Louie</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/papas-bakeria')">Papa's Bakeria</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/papas-burgeria')">Papa's Burgeria</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/papas-cheeseria')">Papa's Cheeseria</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/papas-cupcakeria')">Papa's Cupcakeria</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/papas-donuteria')">Papa's Donuteria</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/papas-freezeria')">Papa's Freezeria</button>
         <button class="game-type simulator skill arcade" onclick="loadGame('https://nintendoboi2.github.io/games/papas-hot-doggeria')">Papa's Hot Doggeria</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/papas-pancakeria')">Papa's Pancakeria</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/papas-pastaria')">Papa's Pastaria</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/papas-pizzeria')">Papa's Pizzeria</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/papas-scooperia')">Papa's Scooperia</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/papas-sushiria')">Papa's Sushiria</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/papas-taco-mia')">Papa's Taco Mia</button>
-        <button onclick="loadGame('https://nintendoboi2.github.io/games/papas-wingeria')">Papa's Wingeria</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/papas-pancakeria')">Papa's Pancakeria</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/papas-pastaria')">Papa's Pastaria</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/papas-pizzeria')">Papa's Pizzeria</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/papas-scooperia')">Papa's Scooperia</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/papas-sushiria')">Papa's Sushiria</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/papas-taco-mia')">Papa's Taco Mia</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/papas-wingeria')">Papa's Wingeria</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/papery-planes')">Papery Planes</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/PC-breakdown')">PC Breakdown</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/pcraft')">P.Craft</button>
+        <button class="game-type driving skill" onclick="loadGame('https://nintendoboi2.github.io/games/poly-track')">Poly Track</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/not-a-proxy-trust-me-here')">Not a Proxy</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/push-your-luck')">Push Your Luck</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/ragdoll-archers')">Ragdoll Archers</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/ragdoll-hit')">Ragdoll Hit</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/random-r6-op')">Random R6 Op</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/REAL-FS')">Real Flight Simulator</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/retro-bowl')">Retro Bowl</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/retro-bowl-collage')">Retro Bowl Collage</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/Riddle-school-1')">Riddle School 1</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/riddle-school-2')">Riddle School 2</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/Riddle-School-3')">Riddle School 3</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/Riddle-School-4')">Riddle School 4</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/Riddle-School-5')">Riddle School 5</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/rooftopsnipers')">Rooftop Snipers</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/run-2')">Run 2</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/slope')">Slope</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/snow-rider')">Snow Rider</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/snake-io')">Snake.io</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/soccer-random')">Soccer Random</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/sonic-cd')">Sonic CD</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/sort-the-court')">Sort the Court</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/space-company')">Space Company</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/SD')">Stickman Destruction</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/stickman-hook')">Stickman Hook</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/SRP')">Stickman Ragdoll Playground</button>
+        <button class="game-type shooter skill" onclick="loadGame('https://nintendoboi2.github.io/games/superhot')">Superhot</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/SM63')">Super Mario 63</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/SM64')">Super Mario 64</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/subway-surfers-beijing')">Subway Surfers Beijing</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/subwaysurfers-sf')">Subway Surfers San Francisco</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/tag')">TAG</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/tanuki-sunset-halloween')">Tanuki Sunset</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/Terminus.JS')">Terminus.JS</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/territorial-io')">Territorial.io</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/tetris')">Tetris</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/there-is-no-game')">There Is No Game</button>
+        <button class="game-type shooter skill" onclick="loadGame('https://nintendoboi2.github.io/games/time-shooter-2')">Time Shooter 2</button>
+        <button class="game-type shooter skill" onclick="loadGame('https://nintendoboi2.github.io/games/time-shooter-3')">Time Shooter 3</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/tiny-fishing')">Tiny Fishing</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/tomb-of-the-mask')">Tomb of The Mask</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/tunnel-rush-1')">Tunnel Rush 1</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/tunnel-rush-2')">Tunnel Rush 2</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/unicycle-hero')">Unicycle Hero</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/volley-random')">Volley Random</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/wheely-1')">Wheely 1</button>
+        <button class="game-type shooter skill" onclick="loadGame('https://nintendoboi2.github.io/games/10-minutes-till-dawn')">10 Minutes Until Dawn</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/2048')">2048</button>
+        <button class="game-type shooter skill" onclick="loadGame('https://nintendoboi2.github.io/games/1v1-lol')">1v1 LOL</button>
+        <button class="game-type skill" onclick="loadGame('https://nintendoboi2.github.io/games/2MinuteFootball')">2 Minute Football</button>
+        <button class="game-type simulator skill" onclick="loadGame('https://nintendoboi2.github.io/games/Notepad')">Notepad</button>
     <script>
         function loadGame(url) {
             document.getElementById('gameFrame').src = url;
