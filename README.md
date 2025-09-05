@@ -1,4 +1,4 @@
-## READ https://github.com/Do-Not-Dusturb/NINTENDOBOITEST   lmk on the css
+
 
 
 
