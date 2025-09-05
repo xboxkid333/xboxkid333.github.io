@@ -12,7 +12,7 @@
     top: 0;                       <-------   Dissabled for now but when fully developed will re-enable
     left: 0;
     background-color: #000000;
-    border: 2px solid #5900ff; 
+    border: 2px solid #50C878; 
     box-sizing: border-box;
 }
 */ 
@@ -24,13 +24,13 @@ body {
 }
 
 h1 {
-    color: #5900ff;
+    color: #50C878;
     font-size: 28px;
     margin-bottom: 20px;
 }
 
 .title-stuff {
-    color: #5900ff;
+    color: #50C878;
     font-size: 28px;
     margin-bottom: 20px;
     text-align: center;
@@ -45,8 +45,8 @@ h1 {
 .game-link-other, .sortgames, .game-link {
     display: inline-block;
     background-color: #000000;
-    border: 2px solid #5900ff;
-    color: #5900ff;
+    border: 2px solid #50C878;
+    color: #50C878;
     padding: 10px 15px;
     margin: 5px;
     text-decoration: none;
@@ -56,14 +56,14 @@ h1 {
 }
 
 .game-link-other:hover, .sortgames:hover, .game-link:hover {
-    background-color: #5900ff;
+    background-color: #50C878;
     color: black;
 }
 
 .game-link-other-container {
     margin: 50px 0;
     background-color: #000000;
-    outline: #5900ff;
+    outline: #50C878;
     color: white;
 }
 
@@ -74,14 +74,14 @@ h1 {
 }
 
 .sortgames button:hover {
-    background-color: #5900ff;
+    background-color: #50C878;
     color: black;
 }
 
 #searchBar {
     width: 50%;
     padding: 10px;
-    border: 2px solid #5900ff;
+    border: 2px solid #50C878;
     background-color: #000000;
     color: #5900ff;
     text-align: center;
@@ -117,7 +117,7 @@ h1 {
 
 .game-container {
     flex: 3;
-    border: 2px solid #5900ff;
+    border: 2px solid #50C878;
     padding: 10px;
     background: #000000;
     position: relative;
@@ -131,7 +131,7 @@ h1 {
 
 .info-container {
     flex: 1;
-    border: 2px solid #5900ff;
+    border: 2px solid #50C878;
     padding: 10px;
     background: #000000;
     text-align: left;
@@ -140,7 +140,7 @@ h1 {
 
 
 .splash-text {
-    color: #5900ff;
+    color: #50C878;
     text-align: center;
 }
 
