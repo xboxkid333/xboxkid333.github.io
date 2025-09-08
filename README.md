@@ -43,7 +43,7 @@
 3. **[Main 3](https://nintendoboi2222.github.io)**
   
 > # DMCA
-- **[DMCA, if needed](https://nintendoboi222.github.io/licence-stuff/dmca)**
+- **[DMCA, if needed](https:xboxkid333.github.io/licence-stuff/dmca)**
 ---
 > ## Font Licence
 - **[Atkinson Hyperlegible Mono](OFL.txt)**
