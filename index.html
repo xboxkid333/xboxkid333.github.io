@@ -930,4 +930,11 @@
 <script src="js/sort.js"></script>
 <script src="js/panic-button.js"></script>
 <script src="js/splash-text.js"></script>
+<script type="text/javascript">
+  var alerted = localStorage.getItem('alerted') || '';
+  if (alerted !== 'yes') {
+    alert("I have fixed all the games on the site, so now EVERY single game will work");
+    localStorage.setItem('alerted', 'yes');
+  }
+</script>
 </html>
